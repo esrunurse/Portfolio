@@ -12,7 +12,6 @@ function Header() {
               Benyapha{" "}
             </span>
           </h1>
-
           <h1 className="text-white text-[8vh] font-bold z-50">
             Front-end Developer
           </h1>
