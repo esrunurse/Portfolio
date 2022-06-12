@@ -18,7 +18,7 @@ function Header() {
           <h1 className="text-white xl:text-[50px] 2xl:text-[65px] 2xl:leading-[100px] xl:leading-[80px] lg:text-4xl lg:leading-[60px] sm:text-4xl sm:leading-[70px] font-bold z-50 ss:text-3xl ss:leading-[50px] fold:text-2xl fold:leading-[40px]">
             Based in Bangkok
           </h1>
-          <button className="bg-Purple w-fit lg:mb-0 fold:mt-14 fold:mb-20 sm:my-[5vh] xl:text-xl font-medium lg:text-lg fold:text-sm sm:text-base text-white px-10 py-2 uppercase shadow-lg rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300">
+          <button className="bg-Purple w-fit lg:mb-0 fold:mt-14 fold:mb-20 sm:my-[5vh] xl:text-lg font-medium fold:text-sm sm:text-base text-white px-10 py-2 uppercase shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300">
             about me
           </button>
         </div>
