@@ -11,18 +11,11 @@
 }
 
 #name {
-  color: #0f103f;
-  text-size: 8vh;
-  font-weight: 700;
-  z-index: 50;
-  position: relative;
   -webkit-text-stroke: 1px white;
 }
 
 #name::before {
   content: attr(dataText);
-  position: absolute;
-  top: -2px;
   left: 0;
   width: 0;
   height: 100%;
