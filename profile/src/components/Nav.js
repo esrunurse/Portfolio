@@ -2,9 +2,10 @@ import "../App.css";
 
 function Nav(props) {
   const { activeNav, setActiveNav } = props;
+  
   return (
     <nav className="top-0 fixed w-full h-fit z-[99] fold:hidden md:block">
-      <div className="bg-Blue900 flex w-full justify-end items-center h-fit px-[10vw]">
+      <div className="bg-Blue900 z-[99] flex w-full justify-end items-center h-fit px-[10vw]">
         <ul className=" flex justify-evenly py-6 md:w-full lg:w-[50vw]">
           <li className="flex flex-col items-center">
             <a

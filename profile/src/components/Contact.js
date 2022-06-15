@@ -48,13 +48,13 @@ function Contact() {
         <div className="flex justify-between fold:flex-col ss:flex-row">
           <input
             required
-            className="border-b border-b-Blue900 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:mr-2 md:placeholder:text-base"
+            className="border-b border-b-Blue900 rounded-none w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:mr-2 md:placeholder:text-base"
             name="name"
             placeholder="Name"
           />
           <input
             required
-            className="border-b border-b-Blue900 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:ml-2 md:placeholder:text-base"
+            className="border-b border-b-Blue900 rounded-none w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:ml-2 md:placeholder:text-base"
             name="lastName"
             placeholder="Last Name"
           />
@@ -62,14 +62,14 @@ function Contact() {
         <div className="flex ss:flex-row fold:flex-col justify-between">
           <input
             required
-            className="border-b border-b-Blue900 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:mr-2 md:placeholder:text-base"
+            className="border-b border-b-Blue900 rounded-none w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:mr-2 md:placeholder:text-base"
             name="email"
             type="email"
             placeholder="Email"
           />
           <input
             required
-            className="border-b border-b-Blue900 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:ml-2 md:placeholder:text-base"
+            className="border-b border-b-Blue900 rounded-none w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none fold:h-9 fold:ml-0 fold:placeholder:text-sm md:h-11 md:ml-2 md:placeholder:text-base"
             name="phone"
             pattern="0[6-9]{1}[0-9]{8}"
             placeholder="Phone Number"
@@ -81,7 +81,7 @@ function Contact() {
           name="message"
           type="text"
           placeholder="Message"
-          className="border-b-Blue900 w-full border-b placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 fold:placeholder:text-sm fold:h-9 md:placeholder:text-base md:h-11 "
+          className="border-b-Blue900 rounded-none w-full border-b placeholder:text-Blue900 focus:border-b focus:border-b-Blue900 focus:outline-none transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 fold:placeholder:text-sm fold:h-9 md:placeholder:text-base md:h-11 "
         />
         <button
           type="submit"
@@ -118,7 +118,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/benyapha-kas/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <LogoLinkedin
@@ -130,7 +130,7 @@ function Contact() {
           <a
             href="https://www.instagram.com/catsrevrywhere/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
             className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <LogoInstagram

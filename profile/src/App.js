@@ -9,27 +9,14 @@ import { useUtils } from "./utils";
 import { useEffect } from "react";
 
 function App() {
-  const { activeNav, setActiveNav } = useUtils();
-  const section = document.querySelectorAll('section');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    section.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (window.scrollY > sectionTop) {
-        current = section.getAttribute('id');
-        setActiveNav(current);
-      }
-    })
-  })
-
+  const { activeNav, setActiveNav, scroll} = useUtils();
+  useEffect(() => {
+    scroll();
+  });
   return (
     <div className="flex-col items-center h-full w-full">
       <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
-      <MobileNav
-        activeNav={activeNav}
-        setActiveNav={setActiveNav}
-      />
+      <MobileNav activeNav={activeNav} setActiveNav={setActiveNav} />
       <Header setActiveNav={setActiveNav} />
       <About />
       <Projects />

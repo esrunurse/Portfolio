@@ -27,7 +27,7 @@ function header(props) {
             Based in Bangkok
           </h1>
           <a href="#about" >
-          <button onClick={() => setActiveNav("about")} className="bg-Purple w-fit font-medium text-white px-10 py-2 uppercase shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:mt-14 fold:mb-20 fold:text-sm sm:text-base sm:my-[5vh] lg:mb-0 xl:text-lg">
+          <button type="button" onClick={() => setActiveNav("about")} className="bg-Purple z-50 w-fit font-medium text-white px-10 py-2 uppercase shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:mt-14 fold:mb-20 fold:text-sm sm:text-base sm:my-[5vh] lg:mb-0 xl:text-lg">
             about me
           </button></a>
         </div>

@@ -11,7 +11,7 @@ function Projects() {
       id="projects"
       className="bg-Blue900 h-full w-full flex flex-col items-center justify-center fold:py-20 md:py-20 md:px-[12vw]"
     >
-      <h1 className="text-white text-center break-words font-bold fold:text-lg md:text-5xl md:my-6 fold:my-4">
+      <h1 className="text-white text-center break-words font-bold fold:text-lg fold:mb-10 md:text-5xl md:my-6">
         Projects
       </h1>
       <div className="flex flex-wrap justify-center items-center w-full md:my-10">
@@ -23,8 +23,8 @@ function Projects() {
               key={index}
               className={
                 !isOpen
-                  ? "p-6 relative overflow-hidden backdrop-blur-sm border-t border-l border-t-white/50 border-l-white/50 shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-Purple/40 rounded-xl fold:w-[90vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw]"
-                  : "p-6 relative overflow-hidden backdrop-blur-sm border-t border-l border-t-white/50 border-l-white/50 shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-Purple/40 rounded-xl fold:w-[90vw] md:w-[50vw] lg:w-[40vw] xl:w-[30vw]"
+                  ? "p-6 relative z-50 overflow-hidden backdrop-blur-sm border-t border-l border-t-white/50 border-l-white/50 shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-Purple/40 rounded-xl fold:w-[90vw] md:w-[40vw] lg:w-[30vw] xl:w-[20vw]"
+                  : "p-6 relative z-50 overflow-hidden backdrop-blur-sm border-t border-l border-t-white/50 border-l-white/50 shadow-[20px_20px_50px_rgba(0,0,0,0.5)] bg-Purple/40 rounded-xl fold:w-[90vw] md:w-[50vw] lg:w-[40vw] xl:w-[30vw]"
               }
             >
               <motion.div layout="position" className="cursor-pointer">
@@ -62,13 +62,20 @@ function Projects() {
                     Responsibilities:
                     <ul className="list-[square] list-inside">
                       {data.responsibilities.map((data, index) => {
-                        return <li key={index} className="mt-2">{data}</li>;
+                        return (
+                          <li key={index} className="mt-2">
+                            {data}
+                          </li>
+                        );
                       })}
                       <li className="mt-2 font-light text-white fold:text-xs md:text-sm xl:text-base">
                         Features:{" "}
                         {data.features.map((data, index) => {
                           return (
-                            <span key={index} className="mt-2 fold:leading-5 md:leading-6 xl:leading-7">
+                            <span
+                              key={index}
+                              className="mt-2 fold:leading-5 md:leading-6 xl:leading-7"
+                            >
                               {data},{" "}
                             </span>
                           );
@@ -84,21 +91,31 @@ function Projects() {
                         onClick={() => {
                           alert("Coming soon!");
                         }}
-                        className=" bg-white mr-2 border border-Blue900 w-full font-light text-Blue900 py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
+                        className=" bg-white mr-2 border border-Blue900 w-full font-light text-white py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
                       >
                         Live
                       </button>
                     ) : (
-                      <a href={data.live} target="_blank" className="w-full">
+                      <a
+                        href={data.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-full"
+                      >
                         <button
                           type="button"
-                          className=" bg-white mr-2 border border-Blue900 w-full font-light text-Blue900 py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
+                          className=" bg-white mr-2 border border-Blue900 w-full font-light text-white py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
                         >
                           Live
                         </button>
                       </a>
                     )}
-                    <a href={data.repo} target="_blank" className="w-full">
+                    <a
+                      href={data.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full"
+                    >
                       <button className="flex items-center justify-center bg-Blue900 border border-Blue900 w-full font-light text-white py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base">
                         <LogoGithub
                           name="logo-github"
