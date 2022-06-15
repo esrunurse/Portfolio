@@ -7,10 +7,8 @@ import {
   LogoLinkedin,
   LogoInstagram,
 } from "react-ionicons";
-import { useNavigate } from "react-router-dom";
 
 function Contact() {
-  const navigate = useNavigate();
   function sendEmail(e) {
     e.preventDefault();
     emailjs
@@ -28,7 +26,6 @@ function Contact() {
           alert("FAILED!" + error);
         }
       );
-    navigate("/");
   }
   return (
     <section

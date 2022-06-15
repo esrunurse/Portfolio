@@ -5,14 +5,11 @@ import {
   PersonOutline,
   CodeOutline,
 } from "react-ionicons";
-import { useUtils } from "../utils";
 
-function MobileNav() {
-  const { activeNav, setActiveNav, scroll } = useUtils();
-  scroll();
-
+function MobileNav(props) {
+  const { activeNav, setActiveNav} = props;
   return (
-    <nav className="bottom-0 fixed w-full h-fit fold:block md:hidden">
+    <nav className="bottom-0 fixed w-full h-fit fold:block md:hidden z-[99]">
       <ul className="bg-white rounded-t-xl flex justify-around py-2 shadow-[50px_50px_0_-15px_rgba(0,0,0,0.3)]">
         <li>
           <a

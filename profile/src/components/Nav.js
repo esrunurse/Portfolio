@@ -1,9 +1,7 @@
 import "../App.css";
-import { useUtils } from "../utils";
 
-function Nav() {
-  const { activeNav, setActiveNav, scroll } = useUtils();
-  scroll();
+function Nav(props) {
+  const { activeNav, setActiveNav } = props;
   return (
     <nav className="top-0 fixed w-full h-fit z-[99] fold:hidden md:block">
       <div className="bg-Blue900 flex w-full justify-end items-center h-fit px-[10vw]">
