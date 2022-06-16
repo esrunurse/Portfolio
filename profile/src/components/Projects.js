@@ -1,20 +1,26 @@
 import { LogoGithub, PersonCircleOutline } from "react-ionicons";
 import "../App.css";
-import projects from "../Assets/project";
+import projects from "../Assets/projects";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Projects() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="projects"
-      className="bg-Blue900 h-full w-full flex flex-col items-center justify-center fold:py-20 md:py-20 md:px-[12vw]"
+      className="bg-Blue900 h-full w-full flex flex-col items-center justify-center fold:pt-12 fold:pb-14 md:py-20 md:px-[12vw]"
     >
-      <h1 className="text-white text-center break-words font-bold fold:text-lg fold:mb-10 md:text-5xl md:my-6">
+      <h1 data-aos="slide-up" className="text-white text-center break-words font-bold fold:text-lg fold:mb-10 md:text-5xl md:my-6">
         Projects
       </h1>
-      <div className="flex flex-wrap justify-center items-center w-full md:my-10">
+      <div data-aos="zoom-in" className="flex flex-wrap justify-center items-center w-full md:my-10">
         {projects.map((data, index) => {
           return (
             <motion.div
@@ -91,7 +97,7 @@ function Projects() {
                         onClick={() => {
                           alert("Coming soon!");
                         }}
-                        className=" bg-white mr-2 border border-Blue900 w-full font-light text-white py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
+                        className=" bg-white mr-2 border border-Blue900 w-full font-light text-Blue900 py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
                       >
                         Live
                       </button>
@@ -104,7 +110,7 @@ function Projects() {
                       >
                         <button
                           type="button"
-                          className=" bg-white mr-2 border border-Blue900 w-full font-light text-white py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
+                          className=" bg-white mr-2 border border-Blue900 w-full font-light text-Blue900 py-2 shadow-lg transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:brightness-110 duration-300 fold:text-sm sm:text-base"
                         >
                           Live
                         </button>

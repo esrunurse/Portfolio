@@ -1,5 +1,6 @@
 import HomeServices from "./HomeServices.png";
-const projects = [
+
+export const projects = [
   {
     name: "Home Services: Group Project",
     image: HomeServices,
@@ -8,7 +9,7 @@ const projects = [
     responsibilities: [
       "Frontend: HTML, CSS (Tailwind CSS) and Javascript (React.js)",
       "Connect to Backend (REST APIs & PostgreSQL Database)",
-      "Working in an agile environment (scrum with Jira)"
+      "Working in an agile environment (scrum with Jira)",
     ],
     features: [
       "Register and login authentication",
@@ -26,4 +27,5 @@ const projects = [
     repo: "https://github.com/esrunurse/home-service",
   },
 ];
+
 export default projects;

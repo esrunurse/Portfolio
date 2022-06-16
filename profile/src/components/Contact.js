@@ -7,6 +7,9 @@ import {
   LogoLinkedin,
   LogoInstagram,
 } from "react-ionicons";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Contact() {
   function sendEmail(e) {
@@ -27,9 +30,13 @@ function Contact() {
         }
       );
   }
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="contact"
+      data-aos="zoom-in-up"
       className="h-screen w-full flex items-center fold:flex-col fold:justify-center lg:flex-row lg:justify-center fold:my-12 md:mt-12 md:mb-0 lg:py-[10vh]"
     >
       <form
